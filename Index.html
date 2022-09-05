@@ -108,6 +108,7 @@
    let quote = document.getElementById("quote");
    fetch("http://api.quotable.io/random").then(response => response.json()).then(result => {
     quote.innerText = result.content;
+ // ready to commit 
     author.innerText = "By -  " + result.author;
 
    });
